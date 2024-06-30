@@ -1,0 +1,326 @@
+:root {
+  --primary-color: pink;
+}
+
+:root {
+  --notice-color: red;
+}
+
+:root {
+  --background-btn-color: #3498db;
+}
+
+:root {
+  --hover-color: #ff4500	;
+}
+
+.notice{
+  color:var(--notice-color);
+  font-size:18px;
+  margin-top: 2px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  border: 1px solid #000;
+  height: auto;
+  width: 100%;
+  background-image: url(../images/anh-food-min.jpg);
+}
+
+/* CSS DÀNH CHO PHẦN HEADER*/
+.header {
+  border: 1px solid black;
+  height: 100px;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  /* Căn các phần tử ở hai đầu */
+  align-items: center;
+
+  position: fixed;
+ 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.header img {
+  height: 99px;
+  width: 99px;
+  margin-left: 30px;
+}
+
+.cart-button {
+  padding: 8px;
+  border: 2px solid transparent;
+ 
+  transition: border-color 0.3s ease;
+  
+  margin-right: 60px;
+}
+
+.cart-button:hover {
+  border-color: red;
+
+}
+
+.fa-shopping-cart {
+  color: var(--primary-color);
+}
+
+.btn {
+  justify-content: center;
+  align-items: center;
+  border: solid 1 px black;
+  color: #ff0000;
+  padding: 8px 16px;
+  margin-right: 20px;
+  cursor: pointer;
+  background-color: var(--background-btn-color);
+}
+
+
+
+/*Css cho thanh menu*/
+
+.menu {
+  border: 1px solid pink;
+  height: 50px;
+  width: 100%;
+  background: var(--primary-color);
+  margin-top: 100px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-bottom: 50px;
+}
+
+.list_menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-top: 10px;
+}
+
+.list_menu li {
+  margin: 0 10px;
+  position: relative;
+}
+
+.list_menu li a {
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+.list_menu li a:hover {
+  color: var(--hover-color);
+
+}
+
+
+/*css cho phần main(sản phẩm)*/
+#main {
+  border: 1px solid #000;
+  height: auto;
+  width: 100%;
+  display: flex;
+  margin-top: 150px;
+}
+
+
+/* css cho phần maincontent*/
+.maincontent {
+  border: 1px solid #000;
+  flex: 1;
+  /* Main content sẽ mở rộng để điền vào phần còn lại của container */
+  background-color: #f0f0f0;
+  height: auto;
+
+}
+
+ul.product_list {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 0;
+  /* Remove white space between inline-block elements */
+}
+
+ul.product_list li {
+  border: 1px solid black;
+  width: 25%;
+  list-style: none;
+  margin: 5px;
+  display: inline-block;
+
+  font-size: 16px;
+
+  vertical-align: top;
+
+  height: 300px;
+}
+
+ul.product_list li img {
+  width: 100%;
+  height: 200px;
+}
+
+p.price_product {
+  text-align: center;
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+p.title_product {
+  text-align: center;
+  color: green;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*Css cho footer trang user*/
+.footer {
+
+  border: 1px solid pink;
+  height: 200px;
+  width: 100%;
+  background-color: pink;
+  color: #fff;
+  padding: 5px 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer-logo img {
+  max-width: 150px;
+  height: 50px;
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: red;
+}
+
+.footer-text {
+  max-width: 400px;
+  margin-top: 10px;
+}
+
+.fa {
+  font-size: 26px;
+}
+
+/* CSS bổ sung */
+
+input:invalid {
+  border: 1px solid red;
+  background-color: #fce4ec;
+  color: #000;
+}
+
+input:valid {
+  border: 1px solid #ccc;
+  
+}
+
+
+/*Css cho phần chi tiết sản phẩm*/
+/* Reset CSS */
+
+
+/* Phần wrapper chứa nội dung chi tiết sản phẩm */
+.wrapper_chitiet {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Phần hình ảnh sản phẩm */
+.hinhanh_sanpham {
+  flex: 0 0 45%;
+}
+
+.hinhanh_sanpham img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Phần chi tiết sản phẩm */
+.chitiet_sanpham {
+  flex: 0 0 45%;
+  padding: 0 20px;
+}
+
+.chitiet_sanpham h3 {
+  margin-top: 0;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.chitiet_sanpham p {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Nút thêm vào giỏ hàng */
+.themgiohang {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.themgiohang:hover {
+  background-color: pink;
+}
+
+
+
+.search_btn {
+  border: 1px solid black;
+  color: red;
+  height: 50px;
+}
+
+.search_wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+
+
+

@@ -1,0 +1,1 @@
+<p class="notice">Trang tin tức</p>

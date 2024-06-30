@@ -1,0 +1,29 @@
+:root {
+    --primary-color: pink; 
+  }
+
+.notice{
+    color:var(--primary-color);
+}
+.admincp_list {
+    display: flex;
+    list-style: none; 
+    padding: 0; 
+}
+
+.container {
+    display: flex;
+}
+
+.title_admin{
+    text-align: left;
+   
+}
+
+.btn-dangxuat:hover{
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+
+

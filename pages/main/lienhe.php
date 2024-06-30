@@ -1,0 +1,1 @@
+<p class="notice">Liên hệ với chúng tôi</p>
